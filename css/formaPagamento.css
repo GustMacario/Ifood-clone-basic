@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+.header{
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+}
+
+.header__content{
+    padding: 22px 20px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-icon{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    color: #EA1D2C;
+    border: none;
+    background-color: transparent;
+}
+
+.header-title{
+    background-color: transparent;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.header-title h1{
+    color: #444444;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pay-cards{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    margin: 6px 15px;
+}
+
+.card.gplay{
+    height: 65px;
+    font-size: 16px;
+    color: #3E3E3E;
+    display: flex;
+    align-items: center;
+}
+
+.invalid{
+    opacity: 0.6;
+}
+
+.card .card__bottom{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 26px;
+    background-color: #F2F2F2;
+    border-radius: 0 0 10px 10px;
+}
+
+.card .card__bottom span{
+    padding-left: 20px;
+    color: #A4A4A4;
+    font-size: 13px;
+}
+
+.pay-cards .card .card__top{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 88px;
+    border-radius: 9px 9px 0 0;
+}
+
+.card .card__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card .card__img .img__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 16px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin: 8px 18px 8px 25px;
+    box-shadow: 1px 1px 1px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+.card .card__img .img__box#gpaycard img{
+    width: 88%;
+}
+
+.card .card__img .img__box#mastercard{
+    background-color: #343A49;
+}
+
+.card .card__img .img__box#mastercard img{
+    width: 76%;
+}
+
+.card .card__img .img__box#elocard{
+    background-color: black;
+}
+
+.card .card__img .img__box#elocard img{
+    width: 99%;
+}
+
+.card .card__img .img__box#visacard img{
+    width: 160%;
+}
+
+.card .card__img .img__box img{
+    width: 60%
+}
+
+.card .card__text{
+    font-size: 15.5px;
+    color: #3E3E3E;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: initial;
+}
+.card .card__text p{
+    padding-bottom: 10px;
+}
+.card .card__text p:last-child{
+    padding-bottom: 0px;
+}
+
+
+.card .card__icon{
+    color: #c8c8c8;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.addbutton{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    position: sticky;
+    bottom: 0;
+    padding: 17px 0;
+}
+
+.addbutton button{
+    background-color: #EA1D2C;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+}

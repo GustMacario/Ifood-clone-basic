@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home-loja</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <button class="back-icon">
+                <span class="material-icons">
+                    arrow_back_ios_new
+                </span>
+            </button>
+            <div class="header-title">
+                <h1>Extra Hiper - Santos</h1>
+                <h2>Agende seu pedido</h2>
+            </div>
+        </div>
+    </header>
+    <section class="delivery">
+        <div class="delivery_buttons">
+            <button class="button1" onclick="Abrirmenu()">
+                <p>Entrega</p>
+                <span class="material-icons">
+                    expand_more
+                </span>
+            </button>
+
+            <button class="button2">
+                <p>Amanhã, <span class="deliv_clock">10:00-11:00</span>•R$ 7,99</p>
+                <span class="material-icons">
+                    chevron_right
+                </span>
+
+            </button>
+        </div>
+    </section>
+    <section class="search-section">
+        <div class="search">
+            <div class="search-bar">
+                <div class="search-bar__box">
+                    <input type="text" placeholder="Buscar por item ou marca" />
+                    <span class="material-icons">
+                        search
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="coupon-bar">
+            <button class="coupon-bar__button">
+                <span class="material-icons">
+                    local_activity
+                </span>
+                <p><span>Entrega grátis </span>a partir de R$110,00</p>
+            </button>
+        </div>
+        <div class="categories">
+            <div class="categories__cards">
+                <a href="#" class="categ__card">
+                    <div class="card__border">
+                        <div class="card__img-circle" id="carne">
+                            <img src="./img/CarneCard.png" alt="Carnes, Aves e Peixes">
+                        </div>
+                    </div>
+                    <p>Carnes, Aves e Peixes</p>
+                </a>
+
+                <a href="#" class="categ__card">
+                    <div class="card__border">
+                        <div class="card__img-circle" id="alim-basicos">
+                            <img src="./img/alimentos-basicosCard.png" alt="Alimentos básicos">
+                        </div>
+                    </div>
+                    <p>Alimentos Básicos</p>
+                </a>
+
+                <a href="#" class="categ__card">
+                    <div class="card__border">
+                        <div class="card__img-circle" id="bebidas">
+                            <img src="./img/bebidaCard.png" alt="Bebidas">
+                        </div>
+                    </div>
+                    <p>Bebidas</p>
+                </a>
+
+                <a href="#" class="categ__card">
+                    <div class="card__border">
+                        <div class="card__img-circle" id="bebida-alcoolica">
+                            <img src="./img/bebidaalcoolicaCard.png" alt="Carnes, Aves e Peixes">
+                        </div>
+                    </div>
+                    <p>Bebidas alcoólicas</p>
+                </a>
+
+                <a href="#" class="categ__card">
+                    <div class="card__border">
+                        <div class="card__img-circle" id="padaria">
+                            <img src="./img/padariaCard.png" alt="Padaria">
+                        </div>
+                    </div>
+                    <p>Padaria</p>
+                </a>
+
+                <a href="#" class="categ__card">
+                    <div class="card__border">
+                        <div class="card__img-circle" id="alim-basicos">
+                            <img src="./img/alimentos-basicosCard.png" alt="Alimentos básicos">
+                        </div>
+                    </div>
+                    <p>Alimentos Básicos</p>
+                </a>
+
+            </div>
+        </div>
+        <div class="discount">
+            <div class="seemore-title">
+                <h2>Grandes marcas com desconto</h2>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="prod-cards">
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/Creme-CheeseCard1.png" alt="">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco promo">R$ 15,39</p>
+                            <p class="produto__desconto">
+                                <span class="produto__desconto__porcent">-30%</span><span
+                                    class="produto__desconto__valor">R$21,98</span>
+                            </p>
+                            <p class="produto__nome">Combo 2x Cream Cheese 300g Light</p>
+                            <p class="produto__descr">Desconto de 30% só hoje</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/Creme-CheeseCard2.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco promo">R$ 15,39</p>
+                            <p class="produto__desconto">
+                                <span class="produto__desconto__porcent">-30%</span><span
+                                    class="produto__desconto__valor">R$21,98</span>
+                            </p>
+                            <p class="produto__nome">Combo 2x Cream Cheese 300g Tradicional</p>
+                            <p class="produto__descr">Desconto de 30% só hoje</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/Cheddar-fatiadoCard3.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 30,87</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Combo 3x Cheddar Fatiado Polenghi 144g</p>
+                            <p class="produto__descr">3 unidades de Queijo Cheddar fatiado</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/Cheddar-fatiadoCard4.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 41,16</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Combo 4x Cheddar Fatiado Polenghi 144g</p>
+                            <p class="produto__descr">4 unidades de Queijo Cheddar fatiado</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/Cheddar-fatiadoCard4.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 41,16</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Combo 4x Cheddar Fatiado Polenghi 144g</p>
+                            <p class="produto__descr">4 unidades de Queijo Cheddar fatiado</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/Cheddar-fatiadoCard4.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 41,16</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Combo 4x Cheddar Fatiado Polenghi 144g</p>
+                            <p class="produto__descr">4 unidades de Queijo Cheddar fatiado</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bestseller">
+            <div class="seemore-title">
+                <h2>Mais vendidos</h2>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="prod-cards">
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/MargarinaCard1.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 5,99</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Margarina Qualy com Sal 500g</p>
+                            <p class="produto__descr">Desconto de 30...</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/CebolaCard2.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 0,20</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Cebola Granel Kg</p>
+                            <p class="produto__descr">Compra a cada 100g</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/Tangerina-ponkanCard3.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 1,10</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Tangerina Ponkan</p>
+                            <p class="produto__descr">A granel (500g cada)</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/RequeijaoCard4.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 5,39</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Requeijão Cremoso Vigor Tradicional 200g</p>
+                            <p class="produto__descr">Pote 200g</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/RequeijaoCard4.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 5,39</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Requeijão Cremoso Vigor Tradicional 200g</p>
+                            <p class="produto__descr">Pote 200g</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="produto-card-box">
+                    <a href="#" class="prod__card">
+                        <div class="produto-card__img">
+                            <img class="produto__img" src="./img/RequeijaoCard4.png" alt="Cream Cheese1">
+                            <button class="discount-card__button">
+                                <span class="material-icons">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                        <div class="produto-card__text">
+                            <p class="produto__preco">R$ 5,39</p>
+                            <p class="produto__desconto">
+                            <p class="produto__nome">Requeijão Cremoso Vigor Tradicional 200g</p>
+                            <p class="produto__descr">Pote 200g</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="deliverymenu modal" id="modal">
+        <h2>Como quer receber o pedido?</h2>
+        <div class="deliverytype">
+            <div class="bike">
+                <div class="bike__content">
+                    <span class="material-icons bikeicon">
+                        moped
+                    </span>
+                    <div class="bike__text">
+                        <span>Entrega</span>
+                        <span class="desc">A gente leva até você</span>
+                    </div>
+                </div>
+                <input type="radio" id="html" name="deliverytype" value="BikeOn">
+            </div>
+            <div class="bike">
+                <div class="bike__content">
+                    <span class="material-icons bikeicon">
+                        directions_walk
+                    </span>
+                    <div class="bike__text">
+                        <span>Retirada</span>
+                        <span class="desc">Você retira no local</span>
+                    </div>
+                </div>
+                <input type="radio" id="html" name="deliverytype" value="BikeOn">
+            </div>
+            <div class="bike-button">
+                <button onclick="Abrirmenu()">Confirmar entrega</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
